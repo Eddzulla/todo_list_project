@@ -62,8 +62,11 @@ const appController = (function(){
         todoEdit.dueDate = date;
         todoEdit.priority = prio;
     }
-    const resetData= () => {
+    const resetData = () => {
         Storage.reset()
+        projects = [];
+        activeProject = null;
+        init();
     }
 
 

@@ -30,6 +30,7 @@ const screenController = (function(){
 
     cleanUpButton.addEventListener("click", () => {
         appController.resetData();
+        init();
     })
     
 
