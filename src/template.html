@@ -6,6 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <div id="content">
+        <section id="sidebar_container">
+            <h1>Projects</h1>
+            <div id="project_list"></div>
+            <button class="add_project_button add-btn">+ Add project</button>
+        </section>
+        <section id="header_container">
+            <h1 id="project_header"></h1>
+        </section>
+        <section id="main_container">
+            <h1 id="todo_list_header">Your todo list:</h1>
+            <div id="todo_list"></div>
+            <button class="add_todo_button add-btn">+ Add todo</button>
+        </section>
+    </div>
+    <dialog id="project_dialog">
+        <form id="project_form">
+            <h3>Project name</h3>
+            <label for="project_name"></label>
+            <input type="text" id="project_name" placeholder="Name of project">
+           
+            <div class="form_actions">
+                <button type="button" id="close_project_dialog">Cancel</button>
+                <button type="submit">Add</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog id="todo_dialog">
+        <form id="todo_form">
+            <h3>Todo task:</h3>
+            <label for="todo_name"></label>
+            <input type="text" id="todo_name" placeholder="Name of todo task" required>
+            <input type="test" id="todo_description" placeholder="Describe the task" required>
+            <input type="date" id="todo_due_date" required>
+            <select id="todo_priority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>    
+            </select>
+            <div class="form_actions">
+                <button type="button" id="close_todo_dialog">Cancel</button>
+                <button type="submit"> OK </button>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>
